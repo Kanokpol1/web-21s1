@@ -18,7 +18,7 @@ app.engine('hbs', expHbs({
 app.use(express.static('public'))
 
 // Route
-// TODO later
+app.get('/', index)
 
 const Port = 30000
 app.listen(Port, () => console.log(`Listening: http://localhost:${POST}`))
