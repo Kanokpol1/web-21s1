@@ -17,8 +17,10 @@ app.engine('hbs', expHbs({
 // Middleware
 app.use(express.static('public'))
 
-// Route
+// Routes
 app.get('/', index)
+app.get('/courses/:code', courseDetails)
 
-const Port = 30000
-app.listen(Port, () => console.log(`Listening: http://localhost:${POST}`))
+const PORT = 3000
+app.listen(PORT,
+  () => console.log(`Listening: http://localhost:${PORT}`))
