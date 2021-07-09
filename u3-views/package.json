@@ -4,7 +4,7 @@
   "description": "ยินดีต้อนรับสู่หลักสูตรการพัฒนาเว็บที่ดีที่สุดที่ BEC :D  \r โปรดปฏิบัติตามคำแนะนำด้านล่างเพื่อตั้งค่าพีซีของคุณ",
   "main": "index.js",
   "scripts": {
-    "server": "nodemon app.js -e js,html",
+    "serve": "nodemon app.js -e js,html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/Kanokpol1/web-21s1#readme",
   "dependencies": {
+    "express": "^4.17.1",
     "express-handlebars": "^5.3.2"
   },
   "devDependencies": {

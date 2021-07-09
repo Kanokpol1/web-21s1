@@ -1,0 +1,13 @@
+<table border="1" cellspacing="6">
+  <tr>
+    <th>ID</th>
+    <th>Title</th>
+  </tr>
+
+  {{ #each units}}
+  <tr>
+    <td>{{ this.id }}</td>
+    <td>{{ this.title }}</td>
+  </tr>
+  {{/each}}
+</table>
