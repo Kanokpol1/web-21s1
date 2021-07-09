@@ -1,4 +1,9 @@
-{{> breadcrumbs crumbs=crumbs }}
+{{#* inline "head"}}
+<link ref="stylesheet" href="/styles2.css">{{/inline}}
+{{#* inline "scripts"}}
+<!-- add scripts here -->{{/inline}}
+
+{{#> page }}
 
 <table border="1" cellpadding="6">
 
@@ -15,3 +20,4 @@
   {{/each}}
 
 </table>
+{{/page}}
