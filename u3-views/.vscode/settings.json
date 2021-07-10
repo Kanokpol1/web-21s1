@@ -16,7 +16,7 @@
   "eslint.format.enable": false, // Enabled via codeActionsOnSave (known order)
   "eslint.lintTask.enable": true,
   "eslint.workingDirectories": [{ "mode": "auto" }],
-  "files.autoSave": "onFocusChange",
+  "files.autoSave": "afterDelay",
   "prettier.semi": false,
   "prettier.trailingComma": "none",
   "prettier.singleQuote": true,
