@@ -1,0 +1,13 @@
+{{#* inline "head"}}
+<link ref="stylesheet" href="/styles2.css">{{/inline}}
+{{#* inline "scripts"}}
+<!-- add scripts here -->{{/inline}}
+
+{{#> page }}
+
+<ul>
+  {{#each course.students}}
+  <li> {{ this }}</li>
+  {{/each}}
+</ul>
+{{/page}}
