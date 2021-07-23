@@ -12,12 +12,7 @@ const readBooks = async (req, res) => {
     const payload = (await query)
       .docs
       .map(doc => doc.data())
-      .map(data => ({
-        isbn13: data.isbn13,
-        title: data.title,
-        duthor: data.duthor,
-        page: data.page
-      }))
+      .map(({ isbn13, title, author, page }) => ({ isbn13, title, author, page }))
 
     res.json({
       result: 'ok',
