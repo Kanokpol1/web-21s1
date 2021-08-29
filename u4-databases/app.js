@@ -3,6 +3,7 @@ const expHbs = require('express-handlebars')
 const { json, urlencoded } = require('body-parser')
 const { bookDetails, bookSearch, bookCreateForm, bookCreate } = require('./features/book-controller')
 const { iterationList, iterationDetails, studentsDetails, courseLists, courseDetails } = require('./features/uni-controller')
+const { index } = require('./features/index-controller')
 
 const app = express()
 
@@ -21,6 +22,7 @@ app.use(json())
 app.use(urlencoded({ extended: false }))
 
 // Routes
+app.get('/', index)
 app.get('/books', bookSearch)
 app.post('/books', bookCreate)
 app.get('/books/new', bookCreateForm)
