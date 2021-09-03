@@ -1,6 +1,6 @@
 <template>
 <div v-if="watchLaterFull && videos">
-  <h1>Queued: {{ watchLaterFull.Length }} / {{ videos.Length }}</h1>
+  <h1>Queued: {{ watchLaterFull.length }} / {{ videos.length }}</h1>
   <div class="playlist" >
     <router-link
       v-for="video in watchLaterFull"
