@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    
+
     <section class="hero is-medium">
       <div class="hero-body has-text-centered-mobile">
         <div class="container">
